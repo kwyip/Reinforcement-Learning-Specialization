@@ -23,6 +23,6 @@ Install it via
 - [Average reward softmax actor critic using tile coding](prediction-control-function-approximation/Avg-Reward)
 
 ### Course 4: Complete reinforcement learning system
-- [Moonshot Technologies]("complete-reinforcement-learning-system/Week 1")
-- [Implement your agent]("complete-reinforcement-learning-system/Week 5")
-- [Completing the parameter study]("complete-reinforcement-learning-system/Week 6")
+- [Moonshot Technologies](complete-reinforcement-learning-system/Week 1)
+- [Implement your agent](complete-reinforcement-learning-system/Week 5)
+- [Completing the parameter study](complete-reinforcement-learning-system/Week 6)
