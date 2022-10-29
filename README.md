@@ -9,6 +9,7 @@ Install it via
 ## Projects
 ### Course 1: Fundamentals of reinforcement learning
 - [Bandits](fundamentals-of-reinforcement-learning/Bandits)
+{% include image.html url="/images/my-cat.jpg" description="My cat, Robert Downey Jr." %}
 - [DynamicProgramming](fundamentals-of-reinforcement-learning/DynamicProgramming)
 
 ### Course 2: Sample based learning methods
