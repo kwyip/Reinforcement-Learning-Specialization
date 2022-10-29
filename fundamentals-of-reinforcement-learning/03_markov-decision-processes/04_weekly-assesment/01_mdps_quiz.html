@@ -1,0 +1,584 @@
+<meta charset="utf-8"/>
+<h3>
+ Question 1
+</h3>
+<co-content>
+ <p>
+  The learner and decision maker is the _______.
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="0" type="radio"/>
+  <co-content>
+   <span>
+    Environment
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="0" type="radio"/>
+  <co-content>
+   <span>
+    Reward
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="0" type="radio"/>
+  <co-content>
+   <span>
+    State
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="0" type="radio"/>
+  <co-content>
+   <span>
+    Agent
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 2
+</h3>
+<co-content>
+ <p>
+  At each time step the agent takes an _______.
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="1" type="radio"/>
+  <co-content>
+   <span>
+    Environment
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="1" type="radio"/>
+  <co-content>
+   <span>
+    State
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="1" type="radio"/>
+  <co-content>
+   <span>
+    Reward
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="1" type="radio"/>
+  <co-content>
+   <span>
+    Action
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 3
+</h3>
+<co-content>
+ <p>
+  Imagine the agent is learning in an episodic problem. Which of the following is true?
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="2" type="radio"/>
+  <co-content>
+   <span>
+    The agent takes the same action at each step during an episode.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="2" type="radio"/>
+  <co-content>
+   <span>
+    The number of steps in an episode is stochastic: each episode can have a different number of steps.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="2" type="radio"/>
+  <co-content>
+   <span>
+    The number of steps in an episode is always the same.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 4
+</h3>
+<co-content>
+ <p hasmath="true">
+  If the reward is always  1 what is the sum of the discounted infinite return when $$\gamma &lt; 1$$
+ </p>
+ <p hasmath="true">
+  $$G_t=\sum_{k=0}^{\infty} \gamma^{k}R_{t k 1}$$
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="3" type="radio"/>
+  <co-content>
+   <span>
+    $$G_t=\frac{1}{1-\gamma}$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="3" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$G_t=\frac{\gamma}{1-\gamma}$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="3" type="radio"/>
+  <co-content>
+   <span>
+    Infinity.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="3" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$G_t=1*\gamma^k$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 5
+</h3>
+<co-content>
+ <p hasmath="true">
+  How does the magnitude of the discount factor (gamma/$$\gamma$$) affect learning?
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="4" type="radio"/>
+  <co-content>
+   <span>
+    With a smaller discount factor the agent is more far-sighted and considers rewards farther into the future.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="4" type="radio"/>
+  <co-content>
+   <span>
+    With a larger discount factor the agent is more far-sighted and considers rewards farther into the future.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="4" type="radio"/>
+  <co-content>
+   <span>
+    The magnitude of the discount factor has no effect on the agent.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 6
+</h3>
+<co-content>
+ <p hasmath="true">
+  Suppose $$\gamma=0.8$$ and we observe the following sequence of rewards: $$R_1 = -3$$, $$R_2 = 5$$, $$R_3=2$$, $$R_4 = 7$$, and $$R_5 = 1$$, with $$T=5$$. What is $$G_0$$? Hint: Work Backwards and recall that $$G_t = R_{t 1}   \gamma G_{t 1}$$.
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="5" type="radio"/>
+  <co-content>
+   <span>
+    6.2736
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="5" type="radio"/>
+  <co-content>
+   <span>
+    11.592
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="5" type="radio"/>
+  <co-content>
+   <span>
+    12
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="5" type="radio"/>
+  <co-content>
+   <span>
+    -3
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="5" type="radio"/>
+  <co-content>
+   <span>
+    8.24
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 7
+</h3>
+<co-content>
+ <p>
+  What does MDP stand for?
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="6" type="radio"/>
+  <co-content>
+   <span>
+    Markov Deterministic Policy
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="6" type="radio"/>
+  <co-content>
+   <span>
+    Markov Decision Process
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="6" type="radio"/>
+  <co-content>
+   <span>
+    Markov Decision Protocol
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="6" type="radio"/>
+  <co-content>
+   <span>
+    Meaningful Decision Process
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 8
+</h3>
+<co-content>
+ <p>
+  Consider using reinforcement learning to control the motion of a robot arm to pick up objects and place them into new positions. The actions in this case might be the voltages applied to each motor at each joint, and the states might be the latest readings of joint angles and velocities. The reward might be  1 for each object successfully picked up and placed. To encourage smooth movements, on each time step a small, negative reward can be given as a function of the moment-to-moment “jerkiness” of the motion. Is this a valid MDP?
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="7" type="radio"/>
+  <co-content>
+   <span>
+    Yes
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="7" type="radio"/>
+  <co-content>
+   <span>
+    No
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 9
+</h3>
+<co-content>
+ <p>
+  <strong>
+   Case 1
+  </strong>
+  : Imagine that you are a vision system. When you are first turned on for the day, an image floods into your camera. You can see lots of things, but not all things. You can't see objects that are occluded, and of course you can't see objects that are behind you. After seeing that first scene, do you have access to the Markov state of the environment?
+ </p>
+ <p hasmath="true">
+  <strong>
+   Case 2
+  </strong>
+  : Imagine that the vision system never worked properly: it always returned the same static imagine, forever. Would you have access to the Markov state then? (Hint: Reason about $$P(S_{t 1} | S_t, ..., S_0)$$, where $$S_t$$ = AllWhitePixels)
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="8" type="radio"/>
+  <co-content>
+   <span>
+    You have access to the Markov state in both Case 1 and 2.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="8" type="radio"/>
+  <co-content>
+   <span>
+    You have access to the Markov state in Case 1, but you don’t have access to the Markov state in Case 2.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="8" type="radio"/>
+  <co-content>
+   <span>
+    You don’t have access to the Markov state in Case 1, but you do have access to the Markov state in Case 2.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="8" type="radio"/>
+  <co-content>
+   <span>
+    You don’t have access to the Markov state in both Case 1 and 2.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 10
+</h3>
+<co-content>
+ <p>
+  What is the reward hypothesis?
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="9" type="radio"/>
+  <co-content>
+   <span>
+    That all of what we mean by goals and purposes can be well thought of as the minimization of the expected value of the cumulative sum of a received scalar signal (called reward)
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="9" type="radio"/>
+  <co-content>
+   <span>
+    Always take the action that gives you the best reward at that point.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="9" type="radio"/>
+  <co-content>
+   <span>
+    Ignore rewards and find other signals.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="9" type="radio"/>
+  <co-content>
+   <span>
+    That all of what we mean by goals and purposes can be well thought of as the maximization of the expected value of the cumulative sum of a received scalar signal (called reward)
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 11
+</h3>
+<co-content>
+ <p>
+  Imagine, an agent is in a maze-like gridworld. You would like the agent to find the goal, as quickly as possible. You give the agent a reward of  1 when it reaches the goal and the discount rate is 1.0, because this is an episodic task. When you run the agent its finds the goal, but does not seem to care how long it takes to complete each episode. How could you fix this? (
+  <strong>
+   Select all that apply
+  </strong>
+  )
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="10" type="checkbox"/>
+  <co-content>
+   <span>
+    Set a discount rate less than 1 and greater than 0, like 0.9.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="10" type="checkbox"/>
+  <co-content>
+   <span>
+    Give the agent -1 at each time step.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="10" type="checkbox"/>
+  <co-content>
+   <span>
+    Give the agent a reward of 0 at every time step so it wants to leave.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="10" type="checkbox"/>
+  <co-content>
+   <span>
+    Give the agent a reward of  1 at every time step.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 12
+</h3>
+<co-content>
+ <p>
+  When may you want to formulate a problem as episodic?
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="11" type="radio"/>
+  <co-content>
+   <span>
+    When the agent-environment interaction does not naturally break into sequences. Each new episode begins independently of how the previous episode ended.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="11" type="radio"/>
+  <co-content>
+   <span>
+    When the agent-environment interaction naturally breaks into sequences.  Each sequence begins independently of how the episode ended.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>

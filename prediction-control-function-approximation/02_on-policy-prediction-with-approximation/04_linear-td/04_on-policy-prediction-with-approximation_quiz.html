@@ -1,0 +1,666 @@
+<meta charset="utf-8"/>
+<h3>
+ Question 1
+</h3>
+<co-content>
+ <p>
+  Which of the following statements is true about function approximation in reinforcement learning? (
+  <strong>
+   Select all that apply
+  </strong>
+  )
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="0" type="checkbox"/>
+  <co-content>
+   <span>
+    It can be more memory efficient.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="0" type="checkbox"/>
+  <co-content>
+   <span>
+    It allows faster training by generalizing between states.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="0" type="checkbox"/>
+  <co-content>
+   <span>
+    We only use function approximation because we have to for large or continuous state spaces. We would use tabular methods if we could, and learn an independent value per state.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="0" type="checkbox"/>
+  <co-content>
+   <span>
+    It can help the agent achieve good generalization with good discrimination, so that it learns faster and represent the values quite accurately.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 2
+</h3>
+<co-content>
+ <p>
+  We learned how value function estimation can be framed as supervised learning. But not all supervised learning methods are suitable. What are some characteristics of reinforcement learning that can make it harder to apply standard supervised learning methods?
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="1" type="checkbox"/>
+  <co-content>
+   <span>
+    When using bootstrapping methods like TD, the target labels change.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="1" type="checkbox"/>
+  <co-content>
+   <span>
+    Data is temporally correlated in reinforcement learning.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="1" type="checkbox"/>
+  <co-content>
+   <span>
+    Data is available as a fixed batch.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 3
+</h3>
+<co-content>
+ <p>
+  Value Prediction (or Policy Evaluation) with Function Approximation can be viewed as supervised learning mainly because _________. [choose the most appropriate completion of the proceeding statement]
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="2" type="radio"/>
+  <co-content>
+   <span>
+    Each state and its target (used in the Monte Carlo update, TD(0) update, and DP update) forms an input-output training example which we can use to train our approximation to the value function
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="2" type="radio"/>
+  <co-content>
+   <span>
+    We can learn the value function by training with batches of data obtained from the agent’s interaction with the world.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="2" type="radio"/>
+  <co-content>
+   <span>
+    We use stochastic gradient descent to learn the value function.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 4
+</h3>
+<co-content>
+ <p hasmath="true">
+  Which of the following is true about using Mean Squared Value Error ($$\bar{VE} = \sum \mu(s) [v_\pi(s) - \hat{v}(s,w)]^2$$) as the prediction objective?
+ </p>
+ <p hasmath="true">
+  $$\mu(s)$$ represents the weighted distribution of visited states
+ </p>
+ <p>
+  (Select all that apply)
+ </p>
+ <p>
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="3" type="checkbox"/>
+  <co-content>
+   <span>
+    The agent can get zero MSVE when using a tabular representation that can represent the true values.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="3" type="checkbox"/>
+  <co-content>
+   <span>
+    Gradient Monte Carlo with linear function approximation converges to the global optimum of this objective, if the step size is reduced over time.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="3" type="checkbox"/>
+  <co-content>
+   <span>
+    Even if the agent uses a linear representation that
+    <strong>
+     cannot represent
+    </strong>
+    the true values, the agent can still get zero MSVE.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="3" type="checkbox"/>
+  <co-content>
+   <span hasmath="true">
+    This objective makes it explicit how we should trade-off accuracy of the value estimates across states, using the weighting $$\mu$$.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 5
+</h3>
+<co-content>
+ <p hasmath="true">
+  Which of the following is true about $$\mu(S)$$ in Mean Squared Value Error? (
+  <strong>
+   Select all that apply
+  </strong>
+  )
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="4" type="checkbox"/>
+  <co-content>
+   <span hasmath="true">
+    If the policy is uniformly random, $$\mu(S)$$ would have the same value for all states.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="4" type="checkbox"/>
+  <co-content>
+   <span>
+    It is a probability distribution.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="4" type="checkbox"/>
+  <co-content>
+   <span>
+    It has higher values for states that are visited more often.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="4" type="checkbox"/>
+  <co-content>
+   <span>
+    It serves as a weighting to minimize the error more in states that we care about.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 6
+</h3>
+<co-content>
+ <p>
+  The stochastic gradient descent update for the MSVE would be as follows.
+ </p>
+ <p>
+  Fill in the blanks (A), (B), (C ) and (D) with correct terms. (
+  <strong>
+   Select all correct answers
+  </strong>
+  )
+ </p>
+ <p hasmath="true">
+  $$\mathbf{w_{t 1}} \doteq \mathbf{w_t} \hspace{0.25em} (A)  \hspace{0.25em} \frac{1}{2}\alpha \nabla [\hspace{0.25em} (C) \hspace{0.25em} - \hspace{0.25em} (D)\hspace{0.25em} ]^2 $$
+ </p>
+ <p hasmath="true">
+  $$ \quad\quad = \mathbf{w_t} \hspace{0.25em} (B) \hspace{0.25em} \alpha [\hspace{0.25em} (C) \hspace{0.25em} - \hspace{0.25em} (D)\hspace{0.25em} ] \nabla \hat{v}(S_t,\mathbf{w_t})$$
+ </p>
+ <p hasmath="true">
+  $$ (\alpha &gt; 0) $$
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="5" type="checkbox"/>
+  <co-content>
+   <span hasmath="true">
+    $$  ,   , \hat{v}(S_t, \mathbf{w_t}), v_\pi(S_t)$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="5" type="checkbox"/>
+  <co-content>
+   <span hasmath="true">
+    $$ -,  -, \hat{v}(S_t, \mathbf{w_t}), v_\pi(S_t)$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="5" type="checkbox"/>
+  <co-content>
+   <span hasmath="true">
+    $$  ,  -, v_\pi(S_t), \hat{v}(S_t, \mathbf{w_t})$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="5" type="checkbox"/>
+  <co-content>
+   <span hasmath="true">
+    $$ -,   , v_\pi(S_t), \hat{v}(S_t, \mathbf{w_t})$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 7
+</h3>
+<co-content>
+ <p>
+  In a Monte Carlo Update with function approximation, we do stochastic gradient descent using the following gradient:
+ </p>
+ <p hasmath="true">
+  $$\nabla[G_t - \hat{v}(s,\mathbf{w})]^2 =  2 [G_t - \hat{v}(s, \mathbf{w})]\nabla (-\hat{v}(S_t, \mathbf{w}_t))$$
+ </p>
+ <p hasmath="true">
+  $$\quad\quad\quad\qquad\quad= (-1)*2 [G_t - \hat{v}(s, \mathbf{w})]\nabla \hat{v}(S_t, \mathbf{w}_t) $$
+ </p>
+ <p>
+  But the actual Monte Carlo Update rule is the following:
+ </p>
+ <p hasmath="true">
+  $$ \mathbf{w_{t 1}} = \mathbf{w_t}   \hspace{0.25em} \alpha [G_t - \hat{v}(S_t, \mathbf{w}_t) ] \nabla \hat{v}(S_t, \mathbf{w}_t), \quad\quad (\alpha &gt;0)$$
+ </p>
+ <p hasmath="true">
+  Where did the constant -1 and 2 go when $$\alpha$$ is positive? (
+  <strong>
+   Choose all that apply
+  </strong>
+  )
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="6" type="checkbox"/>
+  <co-content>
+   <span>
+    We are performing gradient descent, so we subtract the gradient from the weights, negating -1.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="6" type="checkbox"/>
+  <co-content>
+   <span>
+    We are performing gradient ascent, so we subtract the gradient from the weights, negating -1.
+   </span>
+   <span>
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="6" type="checkbox"/>
+  <co-content>
+   <span>
+    We assume that the 2 is included in the step-size.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="6" type="checkbox"/>
+  <co-content>
+   <span hasmath="true">
+    We assume that the 2 is included in $$\nabla \hat{v}(S_t, \mathbf{w}_t)$$.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 8
+</h3>
+<co-content>
+ <p>
+  When using stochastic gradient descent for learning the value function, why do we only make a small update towards minimizing the error instead of fully minimizing the error at each encountered state?
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="7" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    Because we want to minimize approximation error for all states, proportionally to $$\mu$$.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="7" type="radio"/>
+  <co-content>
+   <span>
+    Because small updates guarantee we can slowly reduce approximation error to zero for all states.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="7" type="radio"/>
+  <co-content>
+   <span>
+    Because the target value may not be accurate initially for both TD(0) and Monte Carlo method.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 9
+</h3>
+<co-content>
+ <p>
+  The general stochastic gradient descent update rule for state-value prediction is as follows:
+ </p>
+ <p hasmath="true">
+  $$ \mathbf{w_{t 1}} \doteq \mathbf{w_t}   \alpha [U_t - \hat{v}(S_t, \mathbf{w_t})] \nabla \hat{v}(S_t,\mathbf{w_t})$$
+ </p>
+ <p hasmath="true">
+  For what values of $$U_t$$ would this be a semi-gradient method?
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="8" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$G_t$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="8" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$R_{t 1}   \hat{v}(S_{t 1}, w_t)$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="8" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$R_{t 1}   R_{t 2}   …   R_T$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="8" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$v_\pi(S_t)$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 10
+</h3>
+<co-content>
+ <p>
+  Which of the following statements is true about state-value prediction using stochastic gradient descent?
+ </p>
+ <p hasmath="true">
+  $$ \mathbf{w_{t 1}} \doteq \mathbf{w_t}   \alpha [U_t - \hat{v}(S_t, \mathbf{w_t})] \nabla \hat{v}(S_t,\mathbf{w_t})$$
+ </p>
+ <p>
+  (
+  <strong>
+   Select all that apply
+  </strong>
+  )
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="9" type="checkbox"/>
+  <co-content>
+   <span>
+    Semi-gradient TD(0) methods typically learn faster than gradient Monte Carlo methods.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="9" type="checkbox"/>
+  <co-content>
+   <span hasmath="true">
+    When using $$U_t = R_{t 1}  \hat{v}(S_{t 1},\mathbf{w_t})$$, the weight update is not using the true gradient of the TD error.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="9" type="checkbox"/>
+  <co-content>
+   <span>
+    Using the Monte Carlo return as target, and under appropriate stochastic approximation conditions,  the value function will  converge to a local optimum of the Mean Squared Value Error.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="9" type="checkbox"/>
+  <co-content>
+   <span>
+    Stochastic gradient descent updates with Monte Carlo targets always reduce the Mean Squared Value Error at each step.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="9" type="checkbox"/>
+  <co-content>
+   <span>
+    Using the Monte Carlo return or true value function as target results in an unbiased update.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 11
+</h3>
+<co-content>
+ <p>
+  Which of the following is true about the TD fixed point?
+ </p>
+ <p>
+  (
+  <strong>
+   Select all correct answers
+  </strong>
+  )
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="10" type="checkbox"/>
+  <co-content>
+   <span>
+    The weight vector corresponding to the TD fixed point is the global minimum of the Mean Squared Value Error.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="10" type="checkbox"/>
+  <co-content>
+   <span hasmath="true">
+    At the TD fixed point, the mean squared value error is not larger than $$\frac{1}{1-\gamma}$$ times the minimal mean squared value error, assuming the same linear function approximation.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="10" type="checkbox"/>
+  <co-content>
+   <span>
+    Semi-gradient TD(0) with linear function approximation converges to the TD fixed point.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="10" type="checkbox"/>
+  <co-content>
+   <span>
+    The weight vector corresponding to the TD fixed point is a local minimum of the Mean Squared Value Error.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 12
+</h3>
+<co-content>
+ <p>
+  Which of the following is true about Linear Function Approximation, for estimating state-values? (Select all that apply)
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="11" type="checkbox"/>
+  <co-content>
+   <span hasmath="true">
+    The gradient of the approximate value function $$\hat{v}(s, \mathbf{w})$$ with respect to $$\mathbf{w}$$ is just the feature vector.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="11" type="checkbox"/>
+  <co-content>
+   <span>
+    State aggregation is one way to generate features for linear function approximation.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="11" type="checkbox"/>
+  <co-content>
+   <span>
+    The size of the feature vector is not necessarily equal to the size of the weight vector.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>

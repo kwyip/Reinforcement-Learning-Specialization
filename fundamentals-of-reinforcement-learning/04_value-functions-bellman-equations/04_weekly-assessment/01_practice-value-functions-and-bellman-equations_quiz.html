@@ -1,0 +1,429 @@
+<meta charset="utf-8"/>
+<h3>
+ Question 1
+</h3>
+<co-content>
+ <p>
+  A policy is a function which maps ____ to ____.
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="0" type="radio"/>
+  <co-content>
+   <span>
+    Actions to probability distributions over values.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="0" type="radio"/>
+  <co-content>
+   <span>
+    Actions to probabilities.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="0" type="radio"/>
+  <co-content>
+   <span>
+    States to probability distributions over actions.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="0" type="radio"/>
+  <co-content>
+   <span>
+    States to values.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="0" type="radio"/>
+  <co-content>
+   <span>
+    States to actions.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 2
+</h3>
+<co-content>
+ <p>
+  The term “backup” most closely resembles the term ___ in meaning.
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="1" type="radio"/>
+  <co-content>
+   <span>
+    Value
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="1" type="radio"/>
+  <co-content>
+   <span>
+    Update
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="1" type="radio"/>
+  <co-content>
+   <span>
+    Diagram
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 3
+</h3>
+<co-content>
+ <p>
+  At least one deterministic optimal policy exists in every Markov decision process.
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="2" type="radio"/>
+  <co-content>
+   <span>
+    False
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="2" type="radio"/>
+  <co-content>
+   <span>
+    True
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 4
+</h3>
+<co-content>
+ <p>
+  The optimal state-value function:
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="3" type="radio"/>
+  <co-content>
+   <span>
+    Is not guaranteed to be unique, even in finite Markov decision processes.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="3" type="radio"/>
+  <co-content>
+   <span>
+    Is unique in every finite Markov decision process.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 5
+</h3>
+<co-content>
+ <p>
+  Does adding a constant to all rewards change the set of optimal policies in episodic tasks?
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="4" type="radio"/>
+  <co-content>
+   <span>
+    Yes, adding a constant to all rewards changes the set of optimal policies.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="4" type="radio"/>
+  <co-content>
+   <span>
+    No, as long as the relative differences between rewards remain the same, the set of optimal policies is the same.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 6
+</h3>
+<co-content>
+ <p>
+  Does adding a constant to all rewards change the set of optimal policies in continuing tasks?
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="5" type="radio"/>
+  <co-content>
+   <span>
+    No, as long as the relative differences between rewards remain the same, the set of optimal policies is the same.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="5" type="radio"/>
+  <co-content>
+   <span>
+    Yes, adding a constant to all rewards changes the set of optimal policies.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 7
+</h3>
+<co-content>
+ <p hasmath="true">
+  Select the equation that correctly relates $$v_{\ast}$$ to $$q_{\ast}$$. Assume $$\pi$$ is the uniform random policy.
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="6" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$v_{\ast}(s) = max_a q_{\ast}(s, a)$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="6" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$v_{\ast}(s) = \sum_{a, r, s’} \pi(a | s)p(s’, r | s, a) q_{\ast}(s’)$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="6" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$v_{\ast}(s) = \sum_{a, r, s’} \pi(a | s) p(s’, r | s, a) [r   q_{\ast}(s’)]$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="6" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$v_{\ast}(s) = \sum_{a, r, s’} \pi(a | s) p(s’, r | s, a) [r   \gamma q_{\ast}(s’)]$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 8
+</h3>
+<co-content>
+ <p hasmath="true">
+  Select the equation that correctly relates $$q_{\ast}$$ to $$v_{\ast}$$ using  four-argument function $$p$$.
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="7" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$q_{\ast}(s, a) = \sum_{s’, r} p(s’, r | a, s) [r   v_{\ast}(s')]$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="7" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$q_{\ast}(s, a) = \sum_{s’, r} p(s’, r | a, s) \gamma [r   v_{\ast}(s’)]$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="7" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$q_{\ast}(s, a) = \sum_{s’, r} p(s’, r | a, s) [r   \gamma v_{\ast}(s’)]$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 9
+</h3>
+<co-content>
+ <p hasmath="true">
+  Write a policy $$\pi_{\ast}$$ in terms of $$q_{\ast}$$.
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="8" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$\pi_{\ast}(a|s) = q_{\ast}(s, a)$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="8" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$\pi_{\ast}(a|s) = \max_{a’}  q_{\ast}(s, a’)$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="8" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$\pi_{\ast}(a|s) = 1  \mbox{ if } a = \mbox{argmax}_{a'}  q_{\ast}(s, a'), \mbox{ else } 0$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 10
+</h3>
+<co-content>
+ <p hasmath="true">
+  Give an equation for some $$\pi_{\ast}$$ in terms of $$v_{\ast}$$ and the four-argument $$p$$.
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="9" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$\pi_{\ast}(a|s) = 1 \text{ if } v_{\ast}(s) = \max_{a’} \sum_{s’, r} p(s’, r | s, a’) [ r   \gamma v_{\ast}(s’)], \text{ else } 0$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="9" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$\pi_{\ast}(a|s) = 1 \text{ if } v_{\ast}(s) = \sum_{s’, r} p(s’, r | s, a) [ r   \gamma v_{\ast}(s’)], \text{ else } 0$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="9" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$\pi_{\ast}(a|s) = \sum_{s’, r} p(s’, r | s, a) [ r   \gamma v_{\ast}(s’)]$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="9" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$\pi_{\ast}(a|s) = \max_{a’} \sum_{s’, r} p(s’, r | s, a’) [ r   \gamma v_{\ast}(s’)]$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>

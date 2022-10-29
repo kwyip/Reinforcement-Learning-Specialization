@@ -1,0 +1,163 @@
+<meta charset="utf-8"/>
+<co-content>
+ <p>
+  It is important you follow the instructions in the notebooks. In particular, we will tell you which random seeds to use, and where possible, provide very specific advice about how to call the random number generator in your agents. If you follow those instructions carefully, you should get exactly the same solution – the same learning curve – as our solution. But mistakes happen, and things are complicated. It is possible your agent is correct, but because an extra call to the random number generator or a different seed, your results might differ significantly from ours.
+ </p>
+ <p>
+  But don’t worry, we have designed a very robust grading system! Even if you don’t precisely follow our instructions regarding randomness, it should be ok (though it’s better if you do follow the instructions).  If your agent is correct, then our graders will agree and you will pass the assignment. However, it is actually very tricky to build such a robust graders for thousands of learners. We did it, but it will make the submission process slightly more complicated. But it’s not too much extra work for you, and it’s totally worth it!
+ </p>
+ <p>
+  The process is described in each notebook. Here we provide an FAQ to help you out if the grading process is a pain in your agent. Check it out below. We will add additional questions to the FAQ as they come up in the forum.
+ </p>
+ <p>
+ </p>
+ <ol bullettype="numbers">
+  <li>
+   <p>
+    The submission procedure is complicated. Can you go through it again?
+   </p>
+  </li>
+ </ol>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Step 1: Code up your solutions and run the experiment cells.
+   </p>
+  </li>
+  <li>
+   <p>
+    Step 2: Running the experiment cells generates stores your data-files in a `results/` folder, and zips it into `results.zip`.
+   </p>
+  </li>
+  <li>
+   <p>
+    Step 3: ‘Submit’ the notebook by clicking on the blue button on the top right of the notebook.
+   </p>
+  </li>
+  <li>
+   <p>
+    Step 4: To access this `results.zip` that you need to submit as well, navigate to ‘File -&gt; Open’. This opens the directory/tree view of the notebook.
+   </p>
+  </li>
+  <li>
+   <p>
+    Step 5: Select `results.zip` and click on the ‘Download’ button.
+   </p>
+  </li>
+  <li>
+   <p>
+    Step 6: On the Programming Assignment page, go to the ‘My submission’ tab.
+   </p>
+  </li>
+  <li>
+   <p>
+    Step 7: Here you should see the partial marks you obtained on submitting the notebook. Click on ‘+ Create Submission’.
+   </p>
+  </li>
+  <li>
+   <p>
+    Step 8: Click on ‘C2M4 Data-file Grader’ to upload your latest downloaded `results.zip` file.
+   </p>
+  </li>
+  <li>
+   <p>
+    Step 9: Click on ‘Submit’. Within a few seconds, you should be able to see the total marks you obtained in the notebook and the experiments.
+   </p>
+  </li>
+ </ul>
+ <p>
+ </p>
+ <p>
+  2. Where is my `results.zip` folder?
+ </p>
+ <p>
+  In the notebook, go to ‘File -&gt; Open’. In the directory/tree view of the notebook, you should be able to see `results.zip` among all the other files and folders like `results`, `images`, `Planning_Assignment-v*.ipynb`, etc.
+ </p>
+ <p>
+ </p>
+ <p>
+  3. I can’t see my `results.zip` folder even after opening the directory/tree view of the notebook. What do I do?
+ </p>
+ <p>
+  Did you run the experiment cells? The `shutil.make_archive` command in those creates the zipped file of the `results` folder, and hence the experiment cells need to be executed in order to generate (or update) the zip file.
+ </p>
+ <p>
+ </p>
+ <p>
+  4. I submitted my `results.zip` folder but am getting the feedback from the grader  as: "
+  <em>
+   Dyna-Q: Submission file not found. Please make sure to run all codeblocks.,  Dyna-Q+: Submission file not found. Please make sure to run all codeblocks.
+  </em>
+ </p>
+ <p>
+  Check the results.zip folder that you are submitting – it should have the following hierarchy:
+ </p>
+ <p>
+  - results.zip
+ </p>
+ <p>
+  ---- Dyna-Q_planning_steps.npy
+ </p>
+ <p>
+  ---- Dyna-Q+.npy
+ </p>
+ <p>
+  Note that there is no ‘results’ folder inside this zip file. This is important if you are zipping the results folder yourself. The `shutil` command in the experiment cells of the notebook generate the hierarchy outlined above, which is what the grader expects. If you are zipping the folder yourself, make sure to use the ‘j’ flag with the zip command:
+  <em>
+   zip -jr results.zip results/
+  </em>
+ </p>
+ <p>
+  This creates a ‘results.zip’ from the contents of the ‘results/’ folder. Without the ‘j’ flag, it’ll create a ‘results’ folder inside the zip, which is not what we want.
+ </p>
+ <p>
+ </p>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>

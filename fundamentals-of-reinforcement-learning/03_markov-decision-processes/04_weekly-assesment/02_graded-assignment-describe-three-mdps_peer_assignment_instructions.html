@@ -1,0 +1,92 @@
+<meta charset="utf-8"/>
+<co-content>
+ <p>
+  For this assignment you will get experience thinking about Markov Decision Processes (MDPs) and how to think about them. You will devise three example tasks of your own that fit into the MDP framework, identifying for each its states, actions, and rewards. Make the three examples as different from each other as possible.
+ </p>
+</co-content>
+<h3 level="3">
+ Review criteria
+</h3>
+<co-content>
+ <p>
+  You will be graded on each MDP separately. The grading criteria is:
+ </p>
+ <ol bullettype="numbers">
+  <li>
+   <p>
+    That you have described an MDP and that it is different than your other two.
+   </p>
+  </li>
+  <li>
+   <p>
+    That you have described the MDP's states.
+   </p>
+  </li>
+  <li>
+   <p>
+    That you have described the MDP's actions.
+   </p>
+  </li>
+  <li>
+   <p>
+    That you have described the MDP's rewards.
+   </p>
+  </li>
+ </ol>
+</co-content>
+<h3 level="3">
+ Example Submissions
+</h3>
+<co-content>
+ <p>
+  An example of an MDP could be a self driving car. The states would be all of the sensor readings that car gets at each time step: LIDAR, cameras, the amount of fuel left, current wheel angle, current velocity, gps location. The actions could be accelerate, decelerate, turn wheels left, and turn wheels right. The rewards could be -1 at every time step so that the agent is encouraged to get to the goal as quickly as possible, but -1 billion if it crashes or breaks the law so that it knows not to do that.
+ </p>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>

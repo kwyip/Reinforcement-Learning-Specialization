@@ -1,0 +1,209 @@
+<meta charset="utf-8"/>
+<co-content>
+ <p>
+  By the end of this module, you should be able to meet the following learning objectives:
+ </p>
+ <p>
+  <strong>
+   Lesson 1: Estimating Value Functions as Supervised Learning
+  </strong>
+ </p>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Understand how we can use parameterized functions to approximate value functions
+   </p>
+  </li>
+  <li>
+   <p>
+    Explain the meaning of linear value function approximation
+   </p>
+  </li>
+  <li>
+   <p>
+    Recognize that the tabular case is a special case of linear value function approximation.
+   </p>
+  </li>
+  <li>
+   <p>
+    Understand that there are many ways to parameterize an approximate value function
+   </p>
+  </li>
+  <li>
+   <p>
+    Understand what is meant by generalization and discrimination
+   </p>
+  </li>
+  <li>
+   <p>
+    Understand how generalization can be beneficial
+   </p>
+  </li>
+  <li>
+   <p>
+    Explain why we want both generalization and discrimination from our function approximation
+   </p>
+  </li>
+  <li>
+   <p>
+    Understand how value estimation can be framed as a supervised learning problem
+   </p>
+  </li>
+  <li>
+   <p>
+    Recognize not all function approximation methods are well suited for reinforcement learning
+   </p>
+  </li>
+ </ul>
+ <p>
+  <strong>
+   Lesson 2: The Objective for On-policy Prediction
+  </strong>
+ </p>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Understand the mean-squared value error objective for policy evaluation
+   </p>
+  </li>
+  <li>
+   <p>
+    Explain the role of the state distribution in the objective
+   </p>
+  </li>
+  <li>
+   <p>
+    Understand the idea behind gradient descent and stochastic gradient descent
+   </p>
+  </li>
+  <li>
+   <p>
+    Outline the gradient Monte Carlo algorithm for value estimation
+   </p>
+  </li>
+  <li>
+   <p>
+    Understand how state aggregation can be used to approximate the value function
+   </p>
+  </li>
+  <li>
+   <p>
+    Apply Gradient Monte-Carlo with state aggregation
+   </p>
+  </li>
+ </ul>
+ <p>
+  <strong>
+   Lesson 3: The Objective for TD
+  </strong>
+ </p>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Understand the TD-update for function approximation
+   </p>
+  </li>
+  <li>
+   <p>
+    Highlight the advantages of TD compared to Monte-Carlo
+   </p>
+  </li>
+  <li>
+   <p>
+    Outline the Semi-gradient TD(0) algorithm for value estimation
+   </p>
+  </li>
+  <li>
+   <p>
+    Understand that TD converges to a biased value estimate
+   </p>
+  </li>
+  <li>
+   <p>
+    Understand that TD converges much faster than Gradient Monte Carlo
+   </p>
+  </li>
+ </ul>
+ <p>
+  <strong>
+   Lesson 4: Linear TD
+  </strong>
+ </p>
+ <ul bullettype="bullets">
+  <li>
+   <p>
+    Derive the TD-update with linear function approximation
+   </p>
+  </li>
+  <li>
+   <p>
+    Understand that tabular TD(0) is a special case of linear semi-gradient TD(0)
+   </p>
+  </li>
+  <li>
+   <p>
+    Highlight the advantages of linear value function approximation over nonlinear
+   </p>
+  </li>
+  <li>
+   <p>
+    Understand the fixed point of linear TD learning
+   </p>
+  </li>
+  <li>
+   <p>
+    Describe a theoretical guarantee on the mean squared value error at the TD fixed point
+   </p>
+  </li>
+ </ul>
+ <p>
+ </p>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>

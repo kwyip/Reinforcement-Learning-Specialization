@@ -1,0 +1,731 @@
+<meta charset="utf-8"/>
+<h3>
+ Question 1
+</h3>
+<co-content>
+ <p>
+  TD(0) is a solution method for:
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="0" type="radio"/>
+  <co-content>
+   <span>
+    Control
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="0" type="radio"/>
+  <co-content>
+   <span>
+    Prediction
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 2
+</h3>
+<co-content>
+ <p>
+  Which of the following methods use bootstrapping? (Select all that apply)
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="1" type="checkbox"/>
+  <co-content>
+   <span>
+    Dynamic Programming
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="1" type="checkbox"/>
+  <co-content>
+   <span>
+    Monte Carlo
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="1" type="checkbox"/>
+  <co-content>
+   <span>
+    TD(0)
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 3
+</h3>
+<co-content>
+ <p>
+  Which of the following is the correct characterization of Dynamic Programming (DP) and Temporal Difference (TD) methods?
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="2" type="radio"/>
+  <co-content>
+   <span>
+    Both TD and DP methods use
+    <em>
+     expected
+    </em>
+    updates.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="2" type="radio"/>
+  <co-content>
+   <span>
+    Both TD and DP methods use
+    <em>
+     sample
+    </em>
+    updates.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="2" type="radio"/>
+  <co-content>
+   <span>
+    TD methods use
+    <em>
+     expected
+    </em>
+    updates, DP methods use
+    <em>
+     sample
+    </em>
+    updates.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="2" type="radio"/>
+  <co-content>
+   <span>
+    TD methods uses
+    <em>
+     sample
+    </em>
+    updates, DP methods use
+    <em>
+     expected
+    </em>
+    updates.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 4
+</h3>
+<co-content>
+ <p>
+  Match the algorithm name to its correct update (
+  <strong>
+   select all that apply
+  </strong>
+  )
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="3" type="checkbox"/>
+  <co-content>
+   <span hasmath="true">
+    Monte Carlo: $$V(S_t) \leftarrow V(S_t)   \alpha [G_t - V(S_t)]$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="3" type="checkbox"/>
+  <co-content>
+   <span hasmath="true">
+    Monte Carlo: $$V(S_t) \leftarrow V(S_t)   \alpha [R_{t   1}   \gamma V(S_{t   1}) - V(S_t)]$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="3" type="checkbox"/>
+  <co-content>
+   <span hasmath="true">
+    TD(0): $$V(S_t) \leftarrow V(S_t)   \alpha [G_t - V(S_t)]$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="3" type="checkbox"/>
+  <co-content>
+   <span hasmath="true">
+    TD(0): $$V(S_t) \leftarrow V(S_t)   \alpha [R_{t   1}   \gamma V(S_{t   1}) - V(S_t)]$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 5
+</h3>
+<co-content>
+ <p>
+  Which of the following well-describe Temporal Difference (TD) and Monte-Carlo (MC) methods?
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="4" type="checkbox"/>
+  <co-content>
+   <span>
+    TD methods can be used in
+    <em>
+     continuing
+    </em>
+    tasks.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="4" type="checkbox"/>
+  <co-content>
+   <span>
+    MC methods can be used in
+    <em>
+     continuing
+    </em>
+    tasks.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="4" type="checkbox"/>
+  <co-content>
+   <span>
+    TD methods can be used in
+    <em>
+     episodic
+    </em>
+    tasks.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="4" type="checkbox"/>
+  <co-content>
+   <span>
+    MC methods can be used in
+    <em>
+     episodic
+    </em>
+    tasks.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 6
+</h3>
+<co-content>
+ <p>
+  In an episodic setting, we might have different updates depending on whether the next state is terminal or non-terminal. W​hich of the following TD error calculations are correct?
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="5" type="checkbox"/>
+  <co-content>
+   <span hasmath="true">
+    $$​S_{t   1}$$ is non-terminal: $$\delta_t = R_{t   1}   \gamma V(S_{t   1}) - V(S_t)$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="5" type="checkbox"/>
+  <co-content>
+   <span hasmath="true">
+    $$​S_{t   1}$$ is non-terminal: $$\delta_t = R_{t   1} - V(S_t)$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="5" type="checkbox"/>
+  <co-content>
+   <span hasmath="true">
+    $$​S_{t   1}$$ is terminal: $$\delta_t = R_{t   1}   \gamma V(S_{t   1}) - V(S_t)$$ with $$V(S_{t   1}) = 0$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="5" type="checkbox"/>
+  <co-content>
+   <span hasmath="true">
+    $$​S_{t   1}$$ is terminal: $$\delta_t = R_{t   1} - V(S_t)$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 7
+</h3>
+<co-content>
+ <p hasmath="true">
+  Suppose we have current estimates for the value of two states: V(A) = 1.0, V(B) = 1.0 in an episodic setting. We observe the following trajectory: A, 0, B, 1, B, 0, T where T is a terminal state. Apply TD(0) with step-size, $$\alpha = 1$$, and discount factor, $$\gamma = 0.5$$. What are the value estimates for state A and state B at the end of the episode?
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="6" type="radio"/>
+  <co-content>
+   <span>
+    (1.0, 1.0)
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="6" type="radio"/>
+  <co-content>
+   <span>
+    (0.5, 0)
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="6" type="radio"/>
+  <co-content>
+   <span>
+    (0, 1.5)
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="6" type="radio"/>
+  <co-content>
+   <span>
+    (1, 0)
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="6" type="radio"/>
+  <co-content>
+   <span>
+    (0, 0)
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 8
+</h3>
+<co-content>
+ <p>
+  Which of the following pairs is the correct characterization of the targets used in TD(0) and Monte Carlo?
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="7" type="radio"/>
+  <co-content>
+   <span>
+    TD(0): High Variance Target, Monte Carlo: High Variance Target
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="7" type="radio"/>
+  <co-content>
+   <span>
+    TD(0): High Variance Target, Monte Carlo: Low Variance Target
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="7" type="radio"/>
+  <co-content>
+   <span>
+    TD(0): Low Variance Target, Monte Carlo: High Variance Target
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="7" type="radio"/>
+  <co-content>
+   <span>
+    TD(0): Low Variance Target, Monte Carlo: Low Variance Target
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 9
+</h3>
+<co-content>
+ <p>
+  Suppose you observe the following episodes of the form (State, Reward, ...) from a Markov Decision Process with states A and B:
+ </p>
+ <table columns="1" rows="9">
+  <thead>
+   <tr>
+    <th>
+     <p>
+      Episodes
+     </p>
+    </th>
+   </tr>
+  </thead>
+  <tr>
+   <td>
+    <p>
+     A, 0, B, 0
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <p>
+     B, 1
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <p>
+     B, 1
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <p>
+     B, 1
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <p>
+     B, 0
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <p>
+     B, 0
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <p>
+     B, 1
+    </p>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <p>
+     B, 0
+    </p>
+   </td>
+  </tr>
+ </table>
+ <p>
+ </p>
+ <p hasmath="true">
+  What would batch Monte Carlo methods give for the estimates V(A) and V(B)? What would batch TD(0) give for the estimates V(A) and V(B)? Use a discount factor, $$\gamma$$, of 1.
+ </p>
+ <p hasmath="true">
+  For Batch MC: compute the average returns observed from each state.  For Batch TD: You can start with state B. What is its expected return? Then figure out V(A) using the temporal difference equation: $$V(S_t) = E [R_{t 1}   \gamma V(S_{t 1})]$$.
+ </p>
+ <p>
+  Answers are provided in the following format:
+ </p>
+ <ul bullettype="bullets">
+  <li>
+   <p hasmath="true">
+    $$V^\text{batch-MC}(A)$$ is the value for state $$A$$ under Monte Carlo learning
+   </p>
+  </li>
+  <li>
+   <p hasmath="true">
+    $$V^\text{batch-MC}(B)$$ is the value of state $$B$$ under Monte Carlo learning
+   </p>
+  </li>
+  <li>
+   <p hasmath="true">
+    $$V^\text{batch-TD}(A)$$ is the value of state $$A$$ under TD learning
+   </p>
+  </li>
+  <li>
+   <p hasmath="true">
+    $$V^\text{batch-TD}(B)$$ is the value of state $$B$$ under TD learning
+   </p>
+  </li>
+ </ul>
+ <p>
+  Hint: review example 6.3 in Sutton and Barto; this question is the same, just with different numbers.
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="8" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$V^\text{batch-MC}(A)=0$$
+   </span>
+   <span hasmath="true">
+    $$V^\text{batch-MC}(B)=0.5$$
+   </span>
+   <span hasmath="true">
+    $$V^\text{batch-TD}(A)=0.5$$
+   </span>
+   <span hasmath="true">
+    $$V^\text{batch-TD}(B)=0.5$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="8" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$V^\text{batch-MC}(A)=0$$
+   </span>
+   <span hasmath="true">
+    $$V^\text{batch-MC}(B)=0.5$$
+   </span>
+   <span hasmath="true">
+    $$V^\text{batch-TD}(A)=0$$
+   </span>
+   <span hasmath="true">
+    $$V^\text{batch-TD}(B)=0.5$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="8" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$V^\text{batch-MC}(A)=0$$
+   </span>
+   <span hasmath="true">
+    $$V^\text{batch-MC}(B)=0.5$$
+   </span>
+   <span hasmath="true">
+    $$V^\text{batch-TD}(A)=0$$
+   </span>
+   <span hasmath="true">
+    $$V^\text{batch-TD}(B)=0$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="8" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$V^\text{batch-MC}(A)=0$$
+   </span>
+   <span hasmath="true">
+    $$V^\text{batch-MC}(B)=0.5$$
+   </span>
+   <span hasmath="true">
+    $$V^\text{batch-TD}(A)=1.5$$
+   </span>
+   <span hasmath="true">
+    $$V^\text{batch-TD}(B)=0.5$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="8" type="radio"/>
+  <co-content>
+   <span hasmath="true">
+    $$V^\text{batch-MC}(A)=0.5$$
+   </span>
+   <span hasmath="true">
+    $$V^\text{batch-MC}(B)=0.5$$
+   </span>
+   <span hasmath="true">
+    $$V^\text{batch-TD}(A)=0.5$$
+   </span>
+   <span hasmath="true">
+    $$V^\text{batch-TD}(B)=0.5$$
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 10
+</h3>
+<co-content>
+ <p>
+  True or False: "Both TD(0) and Monte-Carlo (MC) methods converge to the true value function asymptotically, given that the environment is Markovian."
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="9" type="radio"/>
+  <co-content>
+   <span>
+    True
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="9" type="radio"/>
+  <co-content>
+   <span>
+    False
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<h3>
+ Question 11
+</h3>
+<co-content>
+ <p>
+  Which of the following pairs is the correct characterization of the TD(0) and Monte-Carlo (MC) methods?
+ </p>
+</co-content>
+<form>
+ <label>
+  <input name="10" type="radio"/>
+  <co-content>
+   <span>
+    Both TD(0) and MC are offline methods.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="10" type="radio"/>
+  <co-content>
+   <span>
+    Both TD(0) and MC are online methods.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="10" type="radio"/>
+  <co-content>
+   <span>
+    TD(0) is an online method while MC is an offline method.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+ <label>
+  <input name="10" type="radio"/>
+  <co-content>
+   <span>
+    MC is an online method while TD(0) is an offline method.
+   </span>
+  </co-content>
+  <br/>
+ </label>
+</form>
+<hr/>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>
