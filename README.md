@@ -6,14 +6,15 @@ The jupyter notebooks require [Jupyter Dynamic Classes](https://alexhagen.github
 Install it via
 `pip install jdc`
 
+## Projects
 ### Course 1: Fundamentals of reinforcement learning
 - [Bandits](fundamentals-of-reinforcement-learning/Bandits)
 - [DynamicProgramming](fundamentals-of-reinforcement-learning/DynamicProgramming)
 
 ### Course 2: Sample based learning methods
 - [Blackjack](sample-based-learning-methods/Blackjack)
-- [Policy Evaluation with Temporal Difference Learning](sample-based-learning-methods/Policy Evaluation with Temporal Difference Learning)
-- [Q-Learning and Expected Sarsa](sample-based-learning-methods/Q-Learning and Expected Sarsa)
+- [Policy Evaluation with Temporal Difference Learning](sample-based-learning-methods/Policy%20Evaluation%20with%20Temporal%20Difference%20Learning)
+- [Q-Learning and Expected Sarsa](sample-based-learning-methods/Q-Learning%20and%20Expected%20Sarsa)
 - [Dyna-Q](sample-based-learning-methods/Dyna-Q)
 
 ### Course 3: Prediction control function approximation
@@ -23,6 +24,6 @@ Install it via
 - [Average reward softmax actor critic using tile coding](prediction-control-function-approximation/Avg-Reward)
 
 ### Course 4: Complete reinforcement learning system
-- [Moonshot Technologies](complete-reinforcement-learning-system/Week 1)
-- [Implement your agent](complete-reinforcement-learning-system/Week 5)
-- [Completing the parameter study](complete-reinforcement-learning-system/Week 6)
+- [Moonshot Technologies](complete-reinforcement-learning-system/Week%201)
+- [Implement your agent](complete-reinforcement-learning-system/Week%205)
+- [Completing the parameter study](complete-reinforcement-learning-system/Week%206)
